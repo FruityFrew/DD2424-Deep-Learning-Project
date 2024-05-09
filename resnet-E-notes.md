@@ -21,3 +21,11 @@
 | fc:`1e-5` | 20 | `RandomHorizontalFlip,RandomRotation(10),RandomResizedCrop` | 53.14% | |
 | fc:`1e-3` | 20 | `RandomHorizontalFlip,RandomRotation(10),RandomResizedCrop` | 80.87% | |
 | fc:`5e-4` | 20 | `RandomHorizontalFlip,RandomRotation(10),RandomResizedCrop` | 80.66% | |
+
+
+### Multi-class classifier by ziyi 
+no freeeze layers
+| Learning rate | Epochs | Image transformer settings | Resutls | Notes |
+|:-------------:|:------:|----------------------------|---------|-------|
+| fc:`1e-5` | 20 | `RandomHorizontalFlip,RandomRotation(10),RandomResizedCrop` | 90.26% | |
+
