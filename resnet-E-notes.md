@@ -27,9 +27,16 @@
 | layer4:`1e-4`, fc:`5e-4` | 20 | `RandomHorizontalFlip,RandomRotation(10),RandomResizedCrop` | 83.98% | |
 
 
-### Multi-class classifier by ziyi 
-no freeeze layers
-| Learning rate | Epochs | Image transformer settings | Resutls | Notes |
-|:-------------:|:------:|----------------------------|---------|-------|
-| fc:`1e-5` | 20 | `RandomHorizontalFlip,RandomRotation(10),RandomResizedCrop` | 90.26% | |
+### Multi-class classifier by ziyi
 
+| Learning rate | Epochs | Image transformer settings | Results | Notes(infer time) |
+|:-------------:|:------:|----------------------|---------|-------------------|
+|   fc:`5e-5`   |   10   | ViT+Lora             | 96.75%  | 4.48s             |
+|   fc:`1e-5`   |   10   | ViT+Lora             | 2.97%   | 5.08s             |
+|   fc:`3e-5`   |   10   | ViT+Lora             | 94.32%  | 5.26s             |
+|   fc:`5e-5`   |   20   | ViT+Lora             | 97.63%  | 4.75s             |
+|   fc:`1e-5`   |   20   | ViT+Lora             | 86.41%  | 4.81s             |
+|   fc:`3e-5`   |   20   | ViT+Lora             | 97.35%  | 7.22s             |
+|   fc:`1e-5`   |   20   | ViT                  | 90.26%  | 15.22s            |
+|   fc:`3e-5`   |   20   | ViT                  | 91.26%  | 16.39s            |
+|   fc:`5e-5`   |   20   | ViT                  | 92.26%  | 14.85s            |
